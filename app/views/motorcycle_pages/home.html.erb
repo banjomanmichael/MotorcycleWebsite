@@ -1,13 +1,16 @@
+<% provide(:title, "Home") %>
+
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
+    <title><%= yield(:title) %> | HOUSE OF THUNDER Motocycle Shop</title>
+    <%= stylesheet_link_tag "application.css" %>
+    <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/HouseOfThunderStyle.css">
 </head>
-
 
 <style>
   body {
-      background-image: url("app/assets/images/image1.jpg");
+      background-image: url("app/assets/images/HomePage.jpg");
       background-color: black;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -17,7 +20,7 @@
 <body>
     
 <ul>
-    <li><a href="homepage.html">Home</a></li>
+    <li><a href="home.html.erb">Home</a></li>
     
     <li class="dropdown">
     <a href="street.html" class="dropbtn">Street</a>
@@ -72,9 +75,9 @@
 our goal is to provide you with the perfect bike and riding gear. We have a variety of selections available every day.
 </p>
 
-<h3>
+<p>
   Find the right bike and request a test ride or place an order today!
-</h3>
+</p>
 
 </body>
 </html>
